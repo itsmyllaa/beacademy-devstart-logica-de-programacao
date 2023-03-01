@@ -1,0 +1,36 @@
+<!--#WHILE-->
+<!--
+    Estrutura que repete uma sequência de comandos enquanto uma determinada condição lógica é satisfeita. 
+    Sua sintaxe é vista a seguir:
+
+   ˚ enquanto <expressão-lógica> faça
+   ˚     <comandos>
+   ˚ fimenquanto
+
+* <expressão-lógica> - expressão que é avaliada antes de cada repetição do laço. Enquanto seu resultado for verdadeiro, <comandos> são executados.
+
+* fimenquanto - Indica o fim da repetição dos <comandos>. Cada vez que a execução atinge esse ponto, volta-se ao inicio do laço para que <expressão-lógica> seja avaliada novamente.
+
+* Se o resultado desta avaliação for verdadeiro, os <comandos> serão repetidos, se não, a execução prosseguirá a partir do primeiro comando após o fimenquanto.
+
+* Reparamos que nessa estrutura não sabemos inicialmente quantas vezes o laço será repetido. Tal repetição dependerá do teste a ser feito e não de um valor já definido como vimos anteriormente na estrutura FOR.
+
+* Desta forma esta estrutura é indicada para quando não sabemos, inicialmente, quando a repetição irá se encerrar e esta resposta virá durante a execução das repetições, quer por um incremento ou decremento de variável que torne o teste falso, quer por uma vontade do usuário de encerrar a repetição, sendo que tudo isso, somos nós que definimos enquanto estamos planejando a nossa aplicação.
+
+* Por exemplo, enquanto o usuário responder que deseja realizar outra operação (depósito, transferência ou saque) repetimos os passos para ele.
+
+#Exemplo de utilização no VisualG
+
+algoritmo ÏmprimeEnquanto1a10"
+var
+j:inteiro
+inicio
+escreval("Imprimindo de 1 a 10 com o While:Enquanto");
+j<-1
+enquanto j<11 faça
+escreval(j)
+j<-j+1
+fimenquanto
+fimalgoritmo
+
+-->
