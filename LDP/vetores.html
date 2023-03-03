@@ -1,0 +1,51 @@
+<!--
+    **** VETORES *****
+
+Existem quatro tipos de dados já vistos durante a trilha, são eles:
+- Inteiro: Permite definir variáveis numéricas sem casas decimais.
+- Real: Permite definir variáveis numéricas do tipo real, ou seja, com casas decimais.
+- Caractere ou Caracter: Permite definir variáveis do tipo string(texo), ou seja, cadeias de caracteres.
+- Lógico: Permite definir variáveis do tipo booleano, ou seja, com valor verdadeiro ou falso.
+- Variáveis estruturadas: Tipo vetor.
+
+* Vetor é conceitualmente falando, uma coleção de variáveis do mesmo tipo de dado, identificadas por um mesmo nome e acessada através de seus indices.
+
+* Os vetores são facilmente identificados em nosso programa por terem a sua frente um par de colchetes. Por exemplo nome[1]<-"Marcos", neste caso eu estou armazenando o nome "Marcos" no índice 1 do vetor identificado como nome.
+
+* Para criarmos um vetor agimos de forma semelhante a criação de uma variável comum, porém no vetor precisamos informar a quantidade de elementos(posições que o vetor terá) exemplo:
+
+        nomesAlunos: vetor[1..3] de caractere
+
+* A declaração cria um vetor de forma semelhante a uma linha de uma tabela no excel contendo 3 colunas
+_________________________
+| vt[1] | vt[2] | vt[1] |
+_________________________
+|  35   |  40   |  45   |
+_________________________
+
+* Podendo guardar 3 valores de caracteres dentro deste vetor identificando cada posição pelo seu índice(número que irá dentro dos colchetes).
+
+* Utilizaremos vetore sempre que precisarmos criar várias variáveis do mesmo tipo de dado. Desta forma ao invés de criar cinco variáveis do tipo caractere eu posso declarar apenas um vetor de 5 posições:
+
+        nomesAlunos: vetor[1..5] de caractere
+
+* Para atribuir valores para o vetor acima é usada a mesma lógica de atribuição para as variáveis, porém, no caso dos vetores, passo entre colchetes o índice onde desejo armazenar o valor dentro do vetor, por exemplo: 
+
+        nomesAlunos[1] <- "Marcos"
+
+* Como o vetor possui uma quantidade grande de variáveis, atribuir valor uma por uma dentro de um código seria um trabalho muito longo e muito repetitivo.
+
+* Para facilitar nosso trabalho utilizamos a estrutura de repetição do tipo para(for) a fim de repetirmos todos os passos para o cadastro de valores no vetor ou para a leitura desse valores.
+
+* Desta forma ao invés de termos 100 linhas para cadastrar o nome de 100 alunos, teremos um laço que a cada passagem irá incrementar o indice do vetor e fazer a atribuição dos nomes para ele.
+
+Algoritmo "ExemploVetor"
+Var
+    alunos: vetor[1..3] de caractere
+    i: inteiro // índice do vetor
+    Inicio
+    para i<-1 ate 3 faca //laço de impressão
+    escreval("Nome do ", i, "aluno", aluno[alunos])
+    fimpara
+    Fimalgoritmo
+-->
