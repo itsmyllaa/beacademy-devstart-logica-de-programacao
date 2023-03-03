@@ -28,4 +28,36 @@
         j<-j+1
     ate j>10
     fimalgoritmo
+
+    * Observe que os comandos de repetição serão executados até que a condição(ate j>10) seja atendida.
+
+    * Mesmo que inicializemos a variável j com valor superior ao teste, por exemplo 11, ainda assim os comandos serão executados pelo menos uma vez.
+
+    * Essa estrutura é muito útil em situações que pelo menos 1 vez alguns comandos precisam ser executados, como o caso de um login de um usuário com senha.
+
+    * Neste caso a tela será exibida para o usuário digitar o nome de login e senha e exta exibição irá se repetir até que e senha estejam corretos.
+
+    * O comando interrompa(break) pode ser utilizado em qualquer das estruturas de repetição que vimos até aqui.
+
+    * Este comando irá interromper a estrutura de repetição e continuar o programa normalmente após esta estrutura.
+
+    * Exemplo: 
+
+    Estruturas de repetição - Repita até (do-while) com interrompa.
+
+    algoritmo "ImprimeRepitaAte1a10"
+    var
+        j:inteiro
+    inicio
+        escreval("Imprimindo de 1 a 10 Repita-Ate:")
+        j<-1
+        repita
+        escreval(j)
+        j<-j+1
+        se j=5 entao 
+        interrompa
+        fimse
+        ate j>10
+        escreval("Executando até um INTERROMPA j=",j)
+        fimalgoritmo
 -->
